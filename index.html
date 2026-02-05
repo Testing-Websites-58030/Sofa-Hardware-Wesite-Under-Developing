@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1cbd62">
+    
+    <title>Sofa Hardware | Wholesale Sofa Legs, Fittings & Accessories in India</title> 
+    <meta name="description" content="Official Sofa Hardware Manufacturer. We offer 100+ products including Sofa Legs, Fittings, Screws, and Accessories. Wholesale prices with WhatsApp ordering.">
+    <meta name="keywords" content="Sofa Hardware, Sofa Legs Wholesale, Furniture Fittings India, Sofa Accessories, Screws for Furniture">
+    
+    <link rel="canonical" href="https://www.sofahardware.in"> 
+    <link rel="icon" type="image/png" href="favicon.png"> <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sofahardware.in">
+    <meta property="og:title" content="Sofa Hardware - Premium Furniture Fittings">
+    <meta property="og:description" content="Buy Sofa Legs, Fittings, and Accessories at wholesale prices. Browse 100+ products.">
+    <meta property="og:image" content="https://www.sofahardware.in/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1cbd62;
+            --primary-gradient: linear-gradient(135deg, #1cbd62 0%, #117e40 100%);
+            --secondary: #0f172a;
+            --bg-light: #f8fafc;
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- GLOBAL RESET --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
+        body { background-color: var(--bg-light); color: #334155; line-height: 1.6; overflow-x: hidden; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        section { padding: 60px 0; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
+
+        /* --- BUTTONS --- */
+        .btn { padding: 12px 30px; border-radius: 8px; font-weight: 600; cursor: pointer; display: inline-block; border: none; font-size: 0.95rem; }
+        .btn-primary { background: var(--primary-gradient); color: white; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); }
+        .btn-primary:hover { transform: translateY(-2px); }
+
+        /* --- HEADER & NAVIGATION --- */
+        header { position: sticky; top: 0; z-index: 1000; background: rgba(255,255,255,0.98); border-bottom: 1px solid #e2e8f0; }
+        .nav-wrapper { display: flex; justify-content: space-between; align-items: center; height: 75px; }
+        .logo { font-size: 1.6rem; font-weight: 800; color: var(--secondary); display: flex; align-items: center; gap: 8px; }
+        .nav-menu { display: flex; gap: 25px; align-items: center; }
+        .nav-menu a { font-weight: 500; color: var(--secondary); }
+        .hamburger { display: none; font-size: 1.5rem; cursor: pointer; }
+
+        /* --- HERO --- */
+        .hero { 
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070');
+            background-size: cover; background-position: center;
+            padding: 100px 0 80px; color: white; text-align: center;
+        }
+        .hero h1 { font-size: 3rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px; }
+        .hero p { font-size: 1.1rem; color: #cbd5e1; max-width: 700px; margin: 0 auto 35px; }
+
+        /* --- PRODUCT SYSTEM --- */
+        .filter-nav { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 15px; margin-bottom: 30px; scrollbar-width: none; }
+        .filter-btn { padding: 10px 22px; background: white; border: 1px solid #e2e8f0; border-radius: 50px; cursor: pointer; white-space: nowrap; font-weight: 500; }
+        .filter-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 25px; }
+        .product-card { background: white; border-radius: 12px; border: 1px solid #e2e8f0; overflow: hidden; transition: 0.3s; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+        .product-img { height: 200px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; color: #cbd5e1; }
+        .p-info { padding: 20px; }
+        .p-title { font-weight: 700; color: var(--secondary); margin-bottom: 4px; }
+        .p-cat { font-size: 0.8rem; color: #64748b; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .add-btn { width: 100%; padding: 10px; background: #fff; border: 1px solid var(--primary); color: var(--primary); border-radius: 6px; cursor: pointer; font-weight: 600; }
+        .add-btn.added { background: #10b981; border-color: #10b981; color: white; }
+
+        /* --- MOBILE SIDEBAR --- */
+        .drawer-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1999; display: none; }
+        .mobile-drawer { position: fixed; top: 0; right: -280px; width: 280px; height: 100%; background: white; z-index: 2000; transition: 0.3s; padding: 60px 20px; box-shadow: -5px 0 15px rgba(0,0,0,0.1); }
+        .drawer-link { display: block; padding: 15px 0; border-bottom: 1px solid #f1f5f9; font-weight: 600; color: var(--secondary); font-size: 1.1rem; }
+
+        /* --- STICKY WHATSAPP BAR --- */
+        .cart-bar { 
+            position: fixed; bottom: 0; left: 0; width: 100%; background: white; padding: 15px 20px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1); display: flex; justify-content: space-between; 
+            align-items: center; z-index: 1500; transform: translateY(100%); transition: 0.4s;
+        }
+        .cart-bar.active { transform: translateY(0); }
+
+        /* --- RESPONSIVE --- */
+        @media screen and (max-width: 900px) {
+            .nav-menu { display: none; }
+            .hamburger { display: block; }
+            .hero h1 { font-size: 2.2rem; }
+            .product-grid { grid-template-columns: 1fr 1fr; gap: 15px; }
+            section { padding: 40px 0; }
+            footer { padding-bottom: 100px; } /* Space for cart bar */
+        }
+        /* --- ADVANCED FOOTER STYLES --- */
+       footer { background: var(--secondary); color: #cbd5e1; padding: 70px 0 30px; border-top: 5px solid var(--primary); }
+       .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 50px; }
+       .footer-col h3 { color: white; margin-bottom: 20px; font-size: 1.2rem; }
+       .footer-links li { list-style: none; margin-bottom: 12px; }
+       .footer-links a:hover { color: var(--primary); padding-left: 5px; }
+       .managed-box { margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 3px solid var(--primary); }
+       .footer-bottom { text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; font-size: 0.9rem; }
+
+       /* Mobile Footer View */
+      @media screen and (max-width: 900px) {
+      .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 30px; }
+      .footer-links a:hover { padding-left: 0; }
+     }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo"><i class="fas fa-couch" style="color: var(--primary);"></i> Sofa<span>Hardware</span></a>
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#catalog">Products</a>
+                <a href="#about">About</a>
+                <a href="admin-login.php" style="font-size: 1.0rem; opacity: 1.0;">Admin</a>
+                <a href="#catalog" class="btn btn-primary">Order Catalog</a>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <div class="drawer-overlay" id="overlay" onclick="toggleMenu()"></div>
+    <div class="mobile-drawer" id="drawer">
+        <i class="fas fa-times" style="position: absolute; top: 20px; right: 20px; font-size: 1.5rem;" onclick="toggleMenu()"></i>
+        <a href="#home" class="drawer-link" onclick="toggleMenu()">Home</a>
+        <a href="#catalog" class="drawer-link" onclick="toggleMenu()">Products</a>
+        <a href="#about" class="drawer-link" onclick="toggleMenu()">About Us</a>
+        <a href="admin-login.php" class="drawer-link" onclick="toggleMenu()">Admin Login</a>
+    </div>
+
+    <section class="hero" id="home" style="padding: 120px 0 100px; position: relative; overflow: hidden;">
+    <div class="container" style="position: relative; z-index: 2;">
+        
+        <h1 style="font-size: 3.2rem; font-weight: 800; line-height: 1.1; margin-bottom: 25px; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">
+            India’s Leading <span style="color: var(--primary);">Sofa Hardware</span> <br>
+            Manufacturer & Wholesale Supplier
+        </h1>
+
+        <p style="font-size: 1.25rem; color: #e2e8f0; max-width: 800px; margin: 0 auto 40px; line-height: 1.6;">
+            Managed by <strong>Universal Trading Co.</strong>, we provide industrial-grade 
+            <strong>Sofa Legs</strong>, <strong>Zig-Zag Springs</strong>, <strong>Elastic Belts</strong>, 
+            and 100+ furniture components. Quality-tested hardware with fast doorstep delivery 
+            for manufacturers across India.
+        </p>
+
+        <div style="margin-top: 50px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; opacity: 0.9; font-size: 0.9rem; color: #cbd5e1;">
+            <span style="display: flex; align-items: center; gap: 8px;"><i class="fas fa-check-circle" style="color: var(--primary);"></i> Top Quality Material</span>
+            <span style="display: flex; align-items: center; gap: 8px;"><i class="fas fa-truck" style="color: var(--primary);"></i> Pan-India Shipping</span>
+            <span style="display: flex; align-items: center; gap: 8px;"><i class="fas fa-tags" style="color: var(--primary);"></i> Wholesale Bulk Rates</span>
+        </div>
+
+    </div>
+</section>
+
+    <section id="catalog">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 style="font-size: 2rem; color: var(--secondary);">Our Product Catalog</h2>
+                <p>Select items and send your inquiry directly on WhatsApp.</p>
+            </div>
+
+            <div class="filter-nav">
+                <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
+                <button class="filter-btn" onclick="filterProducts('Legs')">Sofa Legs</button>
+                <button class="filter-btn" onclick="filterProducts('Fitting')">Sofa Fitting</button>
+                <button class="filter-btn" onclick="filterProducts('Screw')">Screws</button>
+                <button class="filter-btn" onclick="filterProducts('Accessories')">Accessories</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                </div>
+        </div>
+    </section>
+
+    <section id="about" style="background: white; line-height: 1.8;">
+    <div class="container">
+        <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;">Leading Sofa Hardware Wholesaler & Manufacturer in India</h2>
+        
+        <div style="color: #475569; font-size: 1.05rem;">
+            <p>Welcome to <strong>Sofa Hardware</strong>, the premier destination for high-quality furniture components and structural fittings. As a core division managed by <strong>Universal Trading Co.</strong>, we have established ourselves as a benchmark of quality and reliability in the Indian furniture manufacturing industry. With a vast inventory of over 100+ specialized products, we cater to the diverse needs of furniture designers, large-scale manufacturers, and boutique upholstery shops across the nation.</p>
+
+            <h3 style="margin-top: 40px; color: var(--secondary);">Why Sofa Hardware is the Preferred Choice for Manufacturers</h3>
+            <p>In the competitive landscape of furniture production, the longevity and aesthetic appeal of a sofa depend heavily on the quality of the hardware used. At Sofa Hardware, we understand that every screw, leg, and fitting plays a critical role in the final product's integrity. Our mission is to provide the "bones and support" of your furniture, ensuring that your creations stand the test of time.</p>
+
+            <h3 style="margin-top: 40px; color: var(--secondary);">Premium Sofa Legs: Style Meets Structural Integrity</h3>
+            
+            <p>The legs of a sofa are more than just supports; they are a defining style element. We offer an extensive range of <strong>Sofa Legs</strong> designed for various design aesthetics, from minimalist modern to ornate traditional. Our collection includes:</p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li><strong>Metal Sofa Legs:</strong> Available in Chrome, Gold-plated, Satin, and Matte Black finishes. These are perfect for contemporary furniture, offering high weight capacity and rust resistance.</li>
+                <li><strong>Wooden Sofa Legs:</strong> Crafted from seasoned hardwoods, our wooden legs provide a classic, warm touch. Ideal for luxury sofas and armchairs.</li>
+                <li><strong>Heavy-Duty Plastic Legs:</strong> A cost-effective yet durable solution for budget-friendly furniture lines without compromising on stability.</li>
+            </ul>
+
+            <h3 style="margin-top: 40px; color: var(--secondary);">Advanced Sofa Fittings and Mechanisms</h3>
+            <p>A modern sofa often requires movement and modularity. Our <strong>Sofa Fittings</strong> category includes the latest innovations in furniture engineering. We supply high-grade sectional connectors that keep modular pieces firmly together, as well as adjustable headrest mechanisms and click-clack hinges for sofa beds. Our fittings are tested for thousands of cycles to ensure that the end-user enjoys a smooth, noise-free experience.</p>
+
+            <h3 style="margin-top: 40px; color: var(--secondary);">Industrial-Grade Screws and Fasteners</h3>
+            <p>The strength of a sofa frame is only as good as the fasteners holding it together. We are a leading supplier of <strong>Furniture Screws</strong>, including M8 socket screws, self-tapping wood screws, and specialized bolts. Our fasteners are designed to prevent stripping and provide maximum grip in both hardwood and plywood frames, significantly reducing the chances of frame creaking or structural failure over time.</p>
+
+            
+            
+            <h3 style="margin-top: 40px; color: var(--secondary);">Managed by Universal Trading Co.: A Legacy of Trust</h3>
+            <p>Sofa Hardware is proud to be managed by <strong>Universal Trading Co.</strong>, a name synonymous with transparency and excellence in trading. Our parent company’s robust supply chain management ensures that we never run out of stock on essential items, allowing your production line to move forward without delays. By choosing us, you are not just buying hardware; you are partnering with a legacy of industrial expertise.</p>
+
+            <h3 style="margin-top: 40px; color: var(--secondary);">The Sofa Hardware Advantage: Wholesale Excellence</h3>
+            <p>What sets us apart from traditional "Kabadiwalas" or local vendors is our commitment to a digital-first approach. We have streamlined the wholesale buying process in India:</p>
+            <ol style="margin-left: 20px; margin-top: 10px;">
+                <li><strong>Digital Cataloging:</strong> Browse 100+ items with high-resolution imagery and technical specifications.</li>
+                <li><strong>WhatsApp Integration:</strong> We value your time. Our "One-Click WhatsApp Inquiry" system allows you to send your entire requirement list to our sales team instantly, ensuring you get a quote within minutes.</li>
+                <li><strong>Pan-India Shipping:</strong> While we are based in the heart of Mumbai, our logistics network extends to every corner of India, ensuring timely delivery for bulk orders.</li>
+            </ol>
+
+            <h3 style="margin-top: 40px; color: var(--secondary);">Sustainability and Future Goals</h3>
+            <p>As the furniture industry evolves, so do we. We are constantly sourcing eco-friendly materials and optimizing our manufacturing processes to reduce waste. Whether you are a small workshop in Andheri or a large factory in Bangalore, Sofa Hardware is committed to providing you with the tools to build better, stronger, and more beautiful furniture.</p>
+
+            <div style="margin-top: 40px; padding: 25px; background: #f1f5f9; border-left: 5px solid var(--primary); border-radius: 8px;">
+                <h4 style="color: var(--secondary); margin-bottom: 10px;">Ready to Upgrade Your Production Quality?</h4>
+                <p>Don't settle for sub-standard fittings that lead to customer complaints. Join thousands of satisfied manufacturers who trust <strong>Sofa Hardware</strong> and <strong>Universal Trading Co.</strong> for their raw material needs. Browse our catalog today and experience the difference that premium hardware makes.</p>
+                <a href="#catalog" class="btn btn-primary" style="margin-top: 15px;">Browse 100+ Products Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<footer>
+
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#home" class="logo" style="color: white; margin-bottom: 15px; display: inline-block;">
+                    <i class="fas fa-couch" style="color: var(--primary);"></i> Sofa<span> Hardware</span>
+                </a>
+                <p>India's leading wholesale supplier of premium furniture fittings, legs, accessories, and more.</p>
+
+                <div class="managed-box">
+                    <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Managed & Operated By</span>
+                    <h4 style="color: white; font-size: 1.1rem; margin-top: 5px;">Universal Trading Co.</h4>
+
+                </div>
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#catalog">Product Catalog</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li> 
+                    <li><a href="terms.html">Terms & Conditions</a>
+                 </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt" style="color: var(--primary); width: 20px;"></i> Shop no 14, Bhori Compound, Near Ram Mandir Road, Goregaon West, Mumbai, Maharashtra 400104</li>
+                    <li><i class="fas fa-phone" style="color: var(--primary); width: 20px;"></i> +91 8080696004</li>
+                    <li><i class="fas fa-envelope" style="color: var(--primary); width: 20px;"></i> Ali58030@gmail.com</li>
+                    <li><i class="fas fa-clock" style="color: var(--primary); width: 20px;"></i> All Days: 9 AM - 12 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sofa Hardware. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <div class="cart-bar" id="cartBar">
+        <div>
+            <strong id="cartCount">0 Items Selected</strong>
+            <p style="font-size: 0.8rem; color: #64748b;">Click to send WhatsApp inquiry</p>
+        </div>
+        <button onclick="sendToWhatsapp()" style="background: #25D366; color: white; border: none; padding: 12px 25px; border-radius: 50px; font-weight: 700; cursor: pointer;">
+            <i class="fab fa-whatsapp"></i> Send Inquiry
+        </button>
+    </div>
+
+    <script>
+        // 1. DATA: 100+ Products yahan add karein
+        const products = [
+            { id: 1, name: "Chrome Finish Leg 4-inch", cat: "Legs" },
+            { id: 2, name: "Tapered Wooden Leg", cat: "Legs" },
+            { id: 3, name: "L-Sofa Connector Fitting", cat: "Fitting" },
+            { id: 4, name: "M8 Wood Screw 2-inch", cat: "Screw" },
+            { id: 5, name: "Zig Zag Spring - Heavy", cat: "Accessories" },
+            { id: 6, name: "Designer Metal Leg Gold", cat: "Legs" },
+            { id: 7, name: "Adjustable Sofa Hinge", cat: "Fitting" },
+            { id: 8, name: "Self Tapping Screw Box", cat: "Screw" },
+            { id: 9, name: "Elastic Webbing Roll", cat: "Accessories" },
+            { id: 10, name: "Square Plastic Leg", cat: "Legs" },
+            // Isi tarah 100 products add karein...
+        ];
+
+        let cart = [];
+
+        // 2. RENDERING LOGIC
+        function renderProducts(filter = 'all') {
+            const grid = document.getElementById('productGrid');
+            grid.innerHTML = '';
+            
+            const filtered = filter === 'all' ? products : products.filter(p => p.cat === filter);
+            
+            filtered.forEach(p => {
+                const isAdded = cart.includes(p.id);
+                grid.innerHTML += `
+                    <div class="product-card">
+                        <div class="product-img"><i class="fas fa-box fa-3x"></i></div>
+                        <div class="p-info">
+                            <div class="p-title">${p.name}</div>
+                            <div class="p-cat">${p.cat}</div>
+                            <button class="add-btn ${isAdded ? 'added' : ''}" onclick="toggleCart(${p.id}, this)">
+                                ${isAdded ? 'Added ✓' : 'Add to List'}
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        // 3. CART & WHATSAPP LOGIC
+        function toggleCart(id, btn) {
+            if (cart.includes(id)) {
+                cart = cart.filter(cid => cid !== id);
+                btn.classList.remove('added');
+                btn.innerText = 'Add to List';
+            } else {
+                cart.push(id);
+                btn.classList.add('added');
+                btn.innerText = 'Added ✓';
+            }
+            updateCartBar();
+        }
+
+        function updateCartBar() {
+            const bar = document.getElementById('cartBar');
+            document.getElementById('cartCount').innerText = `${cart.length} Items Selected`;
+            cart.length > 0 ? bar.classList.add('active') : bar.classList.remove('active');
+        }
+
+        function sendToWhatsapp() {
+            const selected = products.filter(p => cart.includes(p.id));
+            let text = "Hello Sofa Hardware, I am interested in these products:%0a%0a";
+            selected.forEach((p, i) => text += `${i+1}. ${p.name} (${p.cat})%0a`);
+            window.open(`https://wa.me/918080696004?text=${text}`, '_blank');
+        }
+
+        // 4. UI LOGIC
+        function filterProducts(cat) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+            renderProducts(cat);
+        }
+
+        function toggleMenu() {
+            const d = document.getElementById('drawer');
+            const o = document.getElementById('overlay');
+            const isActive = d.style.right === '0px';
+            d.style.right = isActive ? '-280px' : '0px';
+            o.style.display = isActive ? 'none' : 'block';
+        }
+
+        renderProducts();
+    </script>
+</body>
+</html>
